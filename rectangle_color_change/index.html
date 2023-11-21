@@ -1,0 +1,22 @@
+<!--keep moving mouse on the left side of rect -> gradually increase the dark shade color of rect to red-->
+<!--keep moving mouse on the right side of rect -> gradually increase the dark shade color of rect to blue -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="rect"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!--steps:
+1. pta kro mouse rect pe aaya
+2. calculate ki hm (center of rect se) left pe hai ya right pe
+3. calculate ki hm (center se) kitna left/right pe hai -> jitna v left/right pe hai utni intensity se respective color lagao ->map the color shade with position in rect i.e center pe red=0 , left edge pe red 255
+-->

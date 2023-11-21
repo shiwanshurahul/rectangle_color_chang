@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#rect {
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    position: absolute;   /*center pe dal rhe rect ko <- these 4 lines*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
